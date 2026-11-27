@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: smm-downloader-bot
+    runtime: docker
+    plan: free
+    region: frankfurt
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_ID
+        value: 6169032422
+      - key: ADMIN_USERNAME
+        sync: false
+      - key: SUPPORT_CHAT_LINK
+        sync: false
